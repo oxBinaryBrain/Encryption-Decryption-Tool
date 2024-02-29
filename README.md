@@ -15,7 +15,7 @@ You can install the required library using pip:
 1. Clone the repository or download the source code.
 2. Make sure you have Python installed on your system.
 3. Install the required dependencies using the provided `requirements.txt` file:
-4. Run the script:'  ' file
+4. Run the script: `main.py` file
 5. Follow the instructions in the command line interface:
    - Enter the message you want to encrypt.
    - The tool will generate a random key for encryption.
