@@ -24,3 +24,28 @@ function decryptMessage(encryptedMessage, key) {
     return decryptedMessage;
 }
 
+function main() {
+    rl.question("Enter the message to encrypt/decrypt: ", (message) => {
+        rl.question("Enter the encryption key (leave empty to generate a new key): ", (key) => {
+            if (!key) {
+                key = generateKey();
+                console.log("Generated Key:", key);
+            }
+
+            rl.question("Encrypt or Decrypt? (e/d): ", (choice) => {
+                if (choice.toLowerCase() === 'e') {
+                    const encryptedMessage = encryptMessage(message, key);
+                    console.log("Encrypted message:", encryptedMessage);
+                } else if (choice.toLowerCase() === 'd') {
+                    const decryptedMessage = decryptMessage(message, key);
+                    console.log("Decrypted message:", decryptedMessage);
+                } else {
+                    console.log("Invalid choice.");
+                }
+                rl.close();
+            });
+        });
+    });
+}
+
+main();
