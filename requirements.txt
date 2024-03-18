@@ -1,1 +1,8 @@
 pip install cryptography
+
+
+
+
+
+
+## If using the javascript version, go through the requirements below.
