@@ -17,3 +17,10 @@ function encryptMessage(message, key) {
     return encryptedMessage;
 }
 
+function decryptMessage(encryptedMessage, key) {
+    const decipher = crypto.createDecipheriv('aes-256-cbc', Buffer.from(key, 'hex'), crypto.randomBytes(16));
+    let decryptedMessage = decipher.update(encryptedMessage, 'hex', 'utf-8');
+    decryptedMessage += decipher.final('utf-8');
+    return decryptedMessage;
+}
+
