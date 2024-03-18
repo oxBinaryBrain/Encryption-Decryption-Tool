@@ -9,7 +9,9 @@ This is a simple tool developed in Python that allows users to encrypt and decry
 
 You can install the required library using pip:
 
-
+If you  are using Javascript file:
+- `crypto`
+- `readline`
 ## Usage
 
 1. Clone the repository or download the source code.
