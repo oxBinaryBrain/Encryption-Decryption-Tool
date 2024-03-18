@@ -6,3 +6,4 @@ pip install cryptography
 
 
 ## If using the javascript version, go through the requirements below.
+The javascript code utilizes Node.js's built-in crypto module for cryptographic operations and readline module for user input. It provides functionality for generating keys, encrypting messages, and decrypting messages, while prompting the user for input via the command line interface.
