@@ -13,7 +13,7 @@ You can install the required library using pip:
 ## Usage
 
 1. Clone the repository or download the source code.
-2. Make sure you have Python installed on your system.
+2. Make sure you have Python installed on your system.(javascript dependencies if you are running `main.js`)
 3. Install the required dependencies using the provided `requirements.txt` file:
 4. Run the script: `main.py` file
 5. Follow the instructions in the command line interface:
